@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "magicality",
+	"version": "${version}",
+	"name": "Magicality Mod",
+	"description": "This Is The Mod For 'Magicality' MCTV Series.",
+	"authors": [
+		"Asikaso"
+	],
+	"contact": {
+		"homepage": "___",
+		"sources": "___"
+	},
+	"license": "MIT",
+	"icon": "assets/magicality/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.asikaso.magicality.MagicalityMod"
+		],
+		"client": [
+			"net.asikaso.magicality.MagicalityModClient"
+		],
+		"fabric-datagen": [
+			"net.asikaso.magicality.MagicalityModDataGenerator"
+		]
+	},
+	"mixins": [
+		"magicality.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
